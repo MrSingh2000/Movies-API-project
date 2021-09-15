@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat&family=Glory:wght@300&family=Kaisei+Tokumin:wght@500&display=swap');
+#submitBtn{
+  margin-left: 10px;
+  font-family: arial;
+  color: #ffffff !important;
+  font-size: 14px;
+  /* font-weight: bold; */
+  text-shadow: 1px 1px 0px #7CACDE;
+  box-shadow: 5px 5px 10px #000000;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: 1px solid #366db6;
+  background: #55b9f7;
+  background: linear-gradient(to top, #63B8EE, #468CCF);
+  filter: opacity(0.5);
+}
+#submitBtn:hover {
+  color: #ffffffd3 !important;
+  background: #468CCF;
+  background: linear-gradient(to top, #3d97ec, #4095ca);
+  box-shadow: 2px -2px 10px #000000;
+  filter: opacity(1);
+}
+.cardTitle {
+    background-color: black;
+  color: rgb(255, 251, 0);
+  font-family: 'Kaisei Tokumin', serif;
+  animation: glow 2s  linear 0s infinite normal;
+}
+#rating {
+  text-align: left;
+}
+.ratingcss{
+    font-family: 'Caveat', cursive;
+    /* font-weight: bold; */
+    font-size: 25px;
+}
+ul {
+    font-family: 'Anton', sans-serif;
+    list-style: none;
+}
+.cards2 {
+  text-align: center;
+}
+#wiki {
+    font-family: 'Glory', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+#Text{
+  margin-top: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  /* text-shadow: 1px 1px 3px rgb(83, 76, 76); */
+  box-shadow: 5px 5px 10px rgb(51, 50, 50);
+}
+
+@keyframes glow {
+  0%{
+    color:#ffea00;
+  }
+  10%{
+    color:#ffdd00;
+  }
+  20%{
+    color:#ffd000;
+  }
+  30%{
+    color:#ffc300;
+  }
+  40%{
+    color:#ffb700;
+  }
+  50%{
+    color:#ffaa00;
+  }
+  60%{
+    color:#ff9500;
+  }
+  70%{
+    color:#ff8800;
+  }
+  80%{
+    color:#ff7b00;
+  }
+  90%{
+    color:#ffd100;
+  }
+  100%{
+    color:#ffee32;
+  }
+}

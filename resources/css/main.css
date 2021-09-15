@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+.cards1,
+.cards2 {
+  width: 267px;
+  background-color: #3fa2b4;
+  height: 450px;
+  margin-top: 20px;
+  border: 1px solid #3fa2b4;
+  border-radius: 20px;
+  box-shadow: 5px 7px 15px black;
+}
+
+#logo {
+  width: 100%;
+  height: fit-content;
+  background-color: red;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#header {
+  display: flex;
+  font-size: 15px;
+  font-family: 'Permanent Marker', cursive;
+}
+.headerList span {
+  display: inline-block;
+  margin-right: 15px;
+  /* background-color: red; */
+  border: 1px solid rgb(255, 255, 255);
+  padding: 7px 10px;
+  animation: opt 1s linear 0s infinite alternate;
+}
+.headerList span:hover,
+.headerContact span:hover {
+  background-color: blue;
+  border: 1px solid blue;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px black;
+  color: white;
+}
+.headerContact span {
+  display: inline-block;
+  margin-left: 15px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 7px 10px;
+  animation: opt 1s linear 0s infinite alternate;
+}
+#logoHeader {
+  margin-left: 5vw;
+}
+.cardTitle {
+  text-align: center;
+}
+.headerContact {
+  margin-left: auto;
+  margin-right: 10%;
+}
+#searchDiv {
+  margin-top: 20px;
+  /* background-color: rgb(0, 255, 221); */
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(back3.jpg);
+  /* background-size: 100; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.searchContent {
+  /* background-color: rgb(172, 255, 47); */
+  width: 80%;
+  height: 450px;
+  font-family: "Kaisei Tokumin", serif;
+}
+#slider {
+  margin-top: 20px;
+  
+}
+#infoSection {
+  display: flex;
+  margin: auto;
+  width: fit-content;
+}
+.image {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#anshuman {
+  font-size: 15px;
+  background-color: #feea00;
+  text-align: center;
+  margin-bottom: -17px;
+  margin-top: 40px;
+}
+#links {
+  background-color: #23ce6b;
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+#links p {
+  margin: 10px;
+}
+#items img {
+  margin: 5px;
+}
+#showList {
+  display: none;
+}
+#C {
+  display: inline-grid;
+  animation: logoo 1s ease-in-out 0s infinite alternate;
+}
+.blast{
+   display: inline-block;
+}
+.blast:hover{
+  animation: rubber 1s ease 0s infinite normal;
+  animation-play-state: running;
+}
+@keyframes opt {
+  0% {
+    transform: rotate(15deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+@keyframes logoo {
+  0% {
+    color: green;
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  25% {
+    color: rgb(17, 0, 255);
+    transform: translate(-20%, -20%) scale3d(1.5, 1.2, 0.3);
+  }
+  50% {
+    color: rgb(5, 226, 255);
+    transform: translate(-50%, -20%) scale3d(2, 1.8, 1.8);
+  }
+  100% {
+    color: rgb(255, 174, 0);
+    transform: scale3d(1.5, 1.5, 1.2);
+  }
+}
+
+.animate {
+  font-size: 45px;
+  color: #e73845;
+  /* text-shadow: 3px 1px 3px rgb(83, 81, 81); */
+   text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
+}
+
+@keyframes rubber {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
