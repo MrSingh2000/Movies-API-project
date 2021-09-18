@@ -15,6 +15,7 @@ The APIs used for this project are =>
 3) imdb YOUTUBE TRAILER API
 4) imdb WikiPedia API
 
+*This currently works in Desktop, Maybe in future will be working on the mobile version!*
 
 CREDITS => ANSHUMAN SINGH
 
