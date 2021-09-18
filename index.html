@@ -79,17 +79,26 @@
     <div id="infoSection">
         <div class="cards cards1 ani">
             <p class="cardTitle">⋙ Rating ⋘</p>
-            <p class="cardText" id="rating"></p>
-            <div id="loader2" style="position: absolute; margin-left: 55px;">
-                <div class="up">
-                    <div class="one"></div>
-                    <div class="two"></div>
+            <span style="display: flex;">
+                <p class="cardText" id="rating" style="z-index: 1;">Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Nisi voluptatem quo blanditiis, totam ullam facilis illum, corrupti veniam facere vel enim
+                    animi rerum necessitatibus unde veritatis similique dignissimos, saepe asperiores id odit laborum
+                    modi ex molestiae! Similique velit ratione ipsum repudiandae? Similique, dolorum alias? Impedit enim
+                    vero ipsam nisi perferendis fugit cumque deleniti sit veniam necessitatibus libero rerum molestias
+                    omnis quidem quae velit sed expedita, provident amet at consectetur obcaecati animi, tempore
+                    eveniet? Iusto sed expedita consequatur quae porro asperiores laudantium, odio non suscipit. Veniam
+                    explicabo aut sint numquam accusamus.</p>
+                <div id="loader2" style="z-index: 2; position: absolute; margin-left: 55px;">
+                    <div class="up">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </div>
+                    <div class="down">
+                        <div class="three"></div>
+                        <div class="four"></div>
+                    </div>
                 </div>
-                <div class="down">
-                    <div class="three"></div>
-                    <div class="four"></div>
-                </div>
-            </div>
+            </span>
         </div>
 
         <link href="resources/css/slider.css" rel="stylesheet">
@@ -106,29 +115,31 @@
 
         <div class="cards cards2 ani">
             <p class="cardTitle">⋙ Trailer ⋘</p>
-            <div id="loader3" style="position: absolute; margin-left: 55px;">
-                <div class="up">
-                    <div class="one"></div>
-                    <div class="two"></div>
+            <span style="display: flex;">
+                <div id="loader3" style="position: absolute; margin-left: 55px;">
+                    <div class="up">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </div>
+                    <div class="down">
+                        <div class="three"></div>
+                        <div class="four"></div>
+                    </div>
                 </div>
-                <div class="down">
-                    <div class="three"></div>
-                    <div class="four"></div>
-                </div>
-            </div>
-            <iframe id="video" src="https://www.youtube.com/embed/Jvurpf91omw" title="Trailer" width="267px"
-                height="170px"></iframe>
-            <p class="cardText" id="wiki">Get to know more about your favourite movie on WikiPedia</p>
+                <iframe id="video" src="https://www.youtube.com/embed/Jvurpf91omw" title="Trailer" width="267px"
+                    height="170px"></iframe>
+                <p class="cardText" id="wiki">Get to know more about your favourite movie on WikiPedia</p>
 
-            <a href="https://en.wikipedia.org/wiki/Inception" id="wikiLink" target="_blank">
-                <button class="wiki">
-                    Lets Wiki
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </a>
+                <a href="https://en.wikipedia.org/wiki/Inception" id="wikiLink" target="_blank">
+                    <button class="wiki">
+                        Lets Wiki
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </a>
+            </span>
 
         </div>
     </div>
@@ -154,7 +165,7 @@
             $("#loader2").hide();
             $("#loader3").hide();
         })
-        if($(window).width() < 769){
+        if ($(window).width() < 769) {
             console.log($(window).width());
             let htmlData = `<link href="resources/css/mobile.css" rel="stylesheet">
             <article id="message">Please Use Desktop to Access!</article>`;
@@ -173,7 +184,7 @@
 
         $("#submitBtn").click(function () {
             str = $("#Text").val();
-            if(str == ""){
+            if (str == "") {
                 alert("Input Field is Empty!");
                 return;
             }
@@ -286,14 +297,14 @@
                     <li>Film Affinity: <span class="ratingcss">${filmaff}</span></li>
                     </ul>`
                 }
-                ratingBox.innerHTML = rate; 
+                ratingBox.innerHTML = rate;
                 $("#loader2").hide();
             })
-            .fail(function(){
-                alert("Rating API is Down");
-                $("#loader2").hide();
-            })
-            
+                .fail(function () {
+                    alert("Rating API is Down");
+                    $("#loader2").hide();
+                })
+
 
         }
 
@@ -308,7 +319,7 @@
                 let v2 = data.videoId;
                 $("#video").attr("src", v1 + v2);
             })
-            .fail("Video/Wiki API is down");
+                .fail("Video/Wiki API is down");
             $("#loader3").hide();
         }
 
